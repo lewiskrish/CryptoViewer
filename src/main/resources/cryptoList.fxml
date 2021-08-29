@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="446.0" prefWidth="226.0" xmlns="http://javafx.com/javafx/16"
+      fx:controller="exam.controller.CryptoListController">
+    <children>
+        <Button fx:id="selectCrypto" layoutX="89.0" layoutY="296.0" mnemonicParsing="false"
+                onMouseClicked="#selectCrypto" text="Select">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <ListView fx:id="cryptoList" layoutX="4.0" layoutY="13.0" prefHeight="274.0" prefWidth="218.0"/>
+        <Button fx:id="createReport" layoutX="68.0" layoutY="328.0" mnemonicParsing="false"
+                onMouseClicked="#createReport" text="Create Report"/>
+        <TextArea fx:id="errorMessage" editable="false" layoutX="13.0" layoutY="359.0" prefHeight="2.0"
+                  prefWidth="200.0" stylesheets="@transparentTextArea.css" wrapText="true"/>
+        <Button fx:id="yes" disable="true" layoutX="51.0" layoutY="407.0" mnemonicParsing="false"
+                onMouseClicked="#useCache" text="Yes"/>
+        <Button fx:id="no" disable="true" layoutX="141.0" layoutY="407.0" mnemonicParsing="false"
+                onMouseClicked="#doNotUseCache" text="No"/>
+    </children>
+</Pane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="154.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16"
+      fx:controller="exam.controller.ConversionController">
+    <children>
+        <ComboBox fx:id="dropdown" layoutX="14.0" layoutY="34.0" prefWidth="150.0" promptText="Select Currency">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ComboBox>
+        <Button fx:id="convertTo" layoutX="14.0" layoutY="102.0" mnemonicParsing="false" onMouseClicked="#convertTo"
+                text="Convert To">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button fx:id="convertFrom" layoutX="210.0" layoutY="102.0" mnemonicParsing="false"
+                onMouseClicked="#convertFrom" text="Convert From">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <TextField fx:id="amount" layoutX="180.0" layoutY="34.0" promptText="Amount">
+            <cursor>
+                <Cursor fx:constant="TEXT"/>
+            </cursor>
+        </TextField>
+        <Text fx:id="toName" layoutX="96.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              wrappingWidth="102.13671875"/>
+        <Text fx:id="fromName" layoutX="304.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              wrappingWidth="88.19921875"/>
+        <TextArea fx:id="conversion" editable="false" layoutX="400.0" layoutY="38.0" prefHeight="78.0" prefWidth="383.0"
+                  stylesheets="@transparentTextArea.css" wrapText="true"/>
+    </children>
+</Pane>
